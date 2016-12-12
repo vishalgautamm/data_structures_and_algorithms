@@ -1,3 +1,17 @@
+/*
+
+Merge Sort: Pseudo Code
+- Recursively sort first half of the input array
+- Recursively sort second half of the input array
+- Merge two sorted sublists into one
+
+ Merge Sort: Running Time
+
+ - The Merge Sort has a
+
+
+*/
+
 function mergeSort(arr) {
     if (arr.length <2) return arr;
 
@@ -27,3 +41,7 @@ function merge(leftArr, rightArr) {
 
     return resultArr;
 }
+
+
+// test
+mergeSort([1,2,6,7,11,3,12,78,123,45]);
