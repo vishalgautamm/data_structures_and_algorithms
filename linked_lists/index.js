@@ -73,10 +73,9 @@ LinkedList.prototype.indexOf = function(value) {
     return indexArr;
 };
 
-// test
-var ll = new LinkedList();
 
-ll.addToTail(100);
-ll.addToTail(50);
-ll.addToTail(25);
-console.log(ll.search(5))
+var myLL = new LinkedList();
+
+myLL.addToHead(100);
+myLL.addToTail(150);
+
