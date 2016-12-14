@@ -1,5 +1,85 @@
 # Data Structures
-Implementing data structures using javascript
+
+
+## Stacks
+- An ordered collection of items that follow the LIFO (**Last In First Out**)
+- The beginning of the stack is known as **base** and the ending is known as **top**
+- First item entered is the base item and the last item is called the top item
+- Real life examples of stack include: stacks of books, stacks of plate from the kitchen.
+
+### Implementation of Stack in Javascript using ES6
+
+#### Creating a Stack
+
+**Step 1: Create a stack class**
+- We will create a Stack class using the ES6 Classes
+```javascript
+class Stack {
+    
+};
+```
+
+**Step 2: Define a data structure that will store the elements of the stack**
+- For this we will define a constructor function that will contain our array. the array will 
+store all the elements of the Stack
+
+```javascript
+class Stack {
+    constructor () {
+        this.item = [];
+    }
+};
+```
+**Step 3: Declare methods**
+- In this example we will declare the following methods
+1. **insert** : This method add new item into the to of the stack
+2. **remove** : Removes item from the top of the stack.
+3. **peek** : Returns the item from the top of the stack.
+4. **isEmpty** : Return true if the stack is empty. Otherwise returns false.
+5. **size** : Returns the number of elements contained in stack
+6. **clear**: Empties the stack
+7. **print** : Logs out the item contained in the stack
+8. **toString** : Returns all the items from the stack
+
+```javascript
+
+class Stack {
+
+    constructor () {
+        this.item = [];
+    }
+    insert(element) {
+        this.item.push(element);
+    }
+    remove() {
+        return this.item.pop();
+    }
+    peek() {
+        return this.item[this.item.length - 1];
+    }
+
+    isEmpty() {
+        return (this.item.length === 0);
+    }
+
+    size() {
+        return this.item.length;
+    }
+
+    clear () {
+        this.item = [];
+    }
+
+    print() {
+        console.log(this.item.toString());
+    }
+
+    toString() {
+        return this.item.toString()
+    }
+
+}
+```
 
 ## Linked Lists
 

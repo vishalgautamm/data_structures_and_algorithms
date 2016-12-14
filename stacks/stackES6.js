@@ -7,11 +7,11 @@ class Stack {
     }
 
     // push: responsible for adding new item in the stack
-    push(element) {
+    insert(element) {
         this.item.push(element);
     }
     // pop: removes last item from the top of the stack
-    pop() {
+    remove() {
         return this.item.pop();
     }
     //peek: returns the last item from the top of the stack

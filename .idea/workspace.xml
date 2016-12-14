@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6977bff5-238a-419d-8af4-cee230e23410" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stacks/stackES6.js" afterPath="$PROJECT_DIR$/stacks/stackES6.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="stackES6.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stacks/stackES6.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            <state relative-caret-position="210">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -55,7 +56,6 @@
         <option value="$PROJECT_DIR$/binary_search_tree/index.js" />
         <option value="$PROJECT_DIR$/algorithms/quickSort.js" />
         <option value="$PROJECT_DIR$/algorithms/mergeSort.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/linked_lists/index.js" />
         <option value="$PROJECT_DIR$/hash_table/index.js" />
         <option value="$PROJECT_DIR$/linked_lists/decimalToBinary.js" />
@@ -64,6 +64,7 @@
         <option value="$PROJECT_DIR$/stacks/decimalToBinary.js" />
         <option value="$PROJECT_DIR$/stacks/index.js" />
         <option value="$PROJECT_DIR$/stacks/stackES6.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -224,18 +225,18 @@
       <workItem from="1481361494134" duration="530000" />
       <workItem from="1481500950438" duration="2159000" />
       <workItem from="1481611429649" duration="1002000" />
-      <workItem from="1481728760026" duration="3912000" />
+      <workItem from="1481728760026" duration="5601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7603000" />
+    <option name="totallyTimeSpent" value="9292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="42" y="23" width="1436" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24946997" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946997" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -287,17 +288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/mergeSort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -345,10 +335,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <folding>
+              <marker date="1481743583000" expanded="true" signature="551:559" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="801:855" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="822:853" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1437:1961" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1459:1490" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1511:1551" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1565:1604" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1616:1671" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1687:1735" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1748:1788" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1803:1834" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1848:1898" ph="{...}" />
+              <marker date="1481743583000" expanded="true" signature="1915:1958" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stacks/stackES6.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="210">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding />
         </state>
       </provider>
