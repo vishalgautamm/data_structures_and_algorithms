@@ -33,7 +33,6 @@ HashTable.prototype.insert = function(key, value) {
                 currentNode.next.value = value;
             }
             currentNode = currentNode.next;
-
         }
         currentNode.next = new HashNode(key, value)
     }
@@ -61,9 +60,7 @@ HashTable.prototype.retrieveAll = function () {
             allNodes.push(currentNode)
             currentNode = currentNode.next;
         }
-
     }
-
     return allNodes
 };
 
