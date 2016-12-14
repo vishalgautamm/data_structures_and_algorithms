@@ -1,7 +1,7 @@
 // Implementation of Stack using ES6 classes
 
 class Stack {
-    // consructor function
+    // consructor function. item array will store the elements of the stack
     constructor () {
         this.item = [];
     }
