@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Data structures and algorithms by vishalgautamm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Data structures and algorithms</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/vishalgautamm/data_structures_and_algorithms" class="btn">View on GitHub</a>
+      <a href="https://github.com/vishalgautamm/data_structures_and_algorithms/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/vishalgautamm/data_structures_and_algorithms/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="data-structures" class="anchor" href="#data-structures" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Structures</h1>
+
+<h2>
+<a id="stacks" class="anchor" href="#stacks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Stacks</h2>
+
+<ul>
+<li>An ordered collection of items that follow the LIFO (<strong>Last In First Out</strong>)</li>
+<li>The beginning of the stack is known as <strong>base</strong> and the ending is known as <strong>top</strong>
+</li>
+<li>First item entered is the base item and the last item is called the top item</li>
+<li>Real life examples of stack include: stacks of books, stacks of plate from the kitchen.</li>
+</ul>
+
+<h3>
+<a id="implementation-of-stack-in-javascript-using-es6" class="anchor" href="#implementation-of-stack-in-javascript-using-es6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation of Stack in Javascript using ES6</h3>
+
+<h4>
+<a id="creating-a-stack" class="anchor" href="#creating-a-stack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating a Stack</h4>
+
+<p><strong>Step 1: Create a stack class</strong></p>
+
+<ul>
+<li>We will create a Stack class using the ES6 Classes</li>
+</ul>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">Stack</span> {
+
+};</pre></div>
+
+<p><strong>Step 2: Define a data structure that will store the elements of the stack</strong></p>
+
+<ul>
+<li>For this we will define a constructor function that will contain our array. the array will 
+store all the elements of the Stack</li>
+</ul>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">class</span> <span class="pl-en">Stack</span> {
+    <span class="pl-en">constructor </span>() {
+        <span class="pl-v">this</span>.<span class="pl-smi">item</span> <span class="pl-k">=</span> [];
+    }
+};</pre></div>
+
+<p><strong>Step 3: Declare methods</strong></p>
+
+<ul>
+<li>In this example we will declare the following methods</li>
+<li>
+<strong>insert</strong> : This method add new item into the to of the stack</li>
+<li>
+<strong>remove</strong> : Removes item from the top of the stack.</li>
+<li>
+<strong>peek</strong> : Returns the item from the top of the stack.</li>
+<li>
+<strong>isEmpty</strong> : Return true if the stack is empty. Otherwise returns false.</li>
+<li>
+<strong>size</strong> : Returns the number of elements contained in stack</li>
+<li>
+<strong>clear</strong>: Empties the stack</li>
+<li>
+<strong>print</strong> : Logs out the item contained in the stack</li>
+<li>
+<strong>toString</strong> : Returns all the items from the stack</li>
+</ul>
+
+<div class="highlight highlight-source-js"><pre>
+<span class="pl-k">class</span> <span class="pl-en">Stack</span> {
+
+    <span class="pl-en">constructor </span>() {
+        <span class="pl-v">this</span>.<span class="pl-smi">item</span> <span class="pl-k">=</span> [];
+    }
+    <span class="pl-en">insert</span>(<span class="pl-smi">element</span>) {
+        <span class="pl-v">this</span>.<span class="pl-smi">item</span>.<span class="pl-c1">push</span>(element);
+    }
+    <span class="pl-en">remove</span>() {
+        <span class="pl-k">return</span> <span class="pl-v">this</span>.<span class="pl-smi">item</span>.<span class="pl-c1">pop</span>();
+    }
+    <span class="pl-en">peek</span>() {
+        <span class="pl-k">return</span> <span class="pl-v">this</span>.<span class="pl-smi">item</span>[<span class="pl-v">this</span>.<span class="pl-smi">item</span>.<span class="pl-c1">length</span> <span class="pl-k">-</span> <span class="pl-c1">1</span>];
+    }
+
+    <span class="pl-en">isEmpty</span>() {
+        <span class="pl-k">return</span> (<span class="pl-v">this</span>.<span class="pl-smi">item</span>.<span class="pl-c1">length</span> <span class="pl-k">===</span> <span class="pl-c1">0</span>);
+    }
+
+    <span class="pl-en">size</span>() {
+        <span class="pl-k">return</span> <span class="pl-v">this</span>.<span class="pl-smi">item</span>.<span class="pl-c1">length</span>;
+    }
+
+    <span class="pl-en">clear</span> () {
+        <span class="pl-v">this</span>.<span class="pl-smi">item</span> <span class="pl-k">=</span> [];
+    }
+
+    <span class="pl-en">print</span>() {
+        <span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-v">this</span>.<span class="pl-smi">item</span>.<span class="pl-c1">toString</span>());
+    }
+
+    <span class="pl-en">toString</span>() {
+        <span class="pl-k">return</span> <span class="pl-v">this</span>.<span class="pl-smi">item</span>.<span class="pl-c1">toString</span>()
+    }
+
+}</pre></div>
+
+<h2>
+<a id="linked-lists" class="anchor" href="#linked-lists" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linked Lists</h2>
+
+<ul>
+<li>Linked lists store a sequential collection of elements</li>
+<li>Each element consists of a node that stores the element itself and also a reference (also known as a pointer or link) that points to the next element.</li>
+</ul>
+
+<h2>
+<a id="binary-search-tree" class="anchor" href="#binary-search-tree" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Binary Search Tree</h2>
+
+<ul>
+<li>A binary search tree is a binary tree, but it only allows you to store nodes with lesser values on the left side and nodes with greater values on the right side.</li>
+</ul>
+
+<h2>
+<a id="hash-table" class="anchor" href="#hash-table" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hash Table</h2>
+
+<ul>
+<li>Hashing consists of finding a value in a data structure in the shortest time possible.</li>
+<li>When we use a hash function, we already know which position the value is in, so we can simply retrieve it.</li>
+<li>A hash function is a function that given a key, and will return an address in the table where the value is.</li>
+</ul>
+
+<h1>
+<a id="algorithms" class="anchor" href="#algorithms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Algorithms</h1>
+
+<h2>
+<a id="merge-sort" class="anchor" href="#merge-sort" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Merge Sort</h2>
+
+<h3>
+<a id="pseudo-code" class="anchor" href="#pseudo-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pseudo Code</h3>
+
+<ul>
+<li>Recursively sort first half of the input array</li>
+<li>Recursively sort second half of the input array</li>
+<li>Merge two sorted sublists into one</li>
+</ul>
+
+<h3>
+<a id="analysis-running-time" class="anchor" href="#analysis-running-time" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Analysis: Running Time</h3>
+
+<ul>
+<li>The Merge Sort has a running time of N*log(N) </li>
+</ul>
+
+<p>HIGHLIGHTS BY 0</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/vishalgautamm/data_structures_and_algorithms">Data structures and algorithms</a> is maintained by <a href="https://github.com/vishalgautamm">vishalgautamm</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
