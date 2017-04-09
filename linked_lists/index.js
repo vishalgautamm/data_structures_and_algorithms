@@ -1,5 +1,4 @@
 //Listed List constructor Function
-
 function LinkedList () {
     this.head = null;
     this.tail = null;
